@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Titillium Web;
+    background: aqua;
+}
+h2{
+    margin: 0;
+    color: rgb(233, 74, 74);
+    font-size: 50px;
+}
+.gal-container{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+
+/*---FONT SIZE---*/
+.gal-font.size.medium{
+    font-size: medium;
+}
+.gal-font.size.larger{
+    font-size: larger;
+}
+.gal-font.size30{
+    font-size: 30px;
+}
+.gal-font.size50{
+    font-size: 50px ;
+}
+
+/*---FONT COLOR---*/
+.gal-font.color.blue{
+    color: blue;
+}
+
+/*---HEADER---*/
+header{
+    background: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.gal-logo{
+    float: left;
+    margin-top: 10px;
+}
+nav{
+    float: right;
+    line-height: 70px;
+}
+nav li{
+    display: inline-block;
+    padding: 5px 20px;
+    margin-left: 10px;
+    background:white;
+    line-height: normal;
+}
+nav > li > a{
+    text-decoration: none;
+    color: darkgrey;
+}
+
+/*---HOME---*/
+.gal-container.home{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 200px;
+}
+.gal-container.home > h1{
+    margin: 0;
+    padding: 10px;
+}
+
+/*---LOGIN---*/
+.gal-container.login{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+.gal-container.login > img{
+    width: 120px;
+    height: 140px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+.gal-container.login > form > a{
+    text-decoration: none;
+    color: darkgrey;
+}
+input[type="text"],input[type="password"]{
+    width: 300px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+    border-bottom: 2px solid darkgray;
+    margin-top: 20px;
+}
+.gal-btn.login{
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: darkgray;
+}
+
+/*---REGISTRASI---*/
+.gal-container.registrasi{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 90px;
+}
+.gal-container.registrasi > img{
+    width: 120px;
+    height: 140px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+.gal-container.registrasi > form > a{
+    text-decoration: none;
+    color: darkgrey;
+}
+input[type="text"],input[type="password"]{
+    width: 300px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+    border-bottom: 2px solid darkgray;
+    margin-top: 20px;
+}
+.gal-btn.registrasi{
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: darkgray;
+}
+
+/*---FORM---*/
+.gal-nav{
+    /*margin: 0px;
+    padding: 0 67px 0 67px;
+    font-family: 'Arial', serif;
+    font-size: 12px;
+    list-style-type: none;
+    overflow: hidden;
+    position: sticky;
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;*/
+    width: 100%;
+    background: white;
+}
+.gal-nav > ul{
+    width: 75%;
+    margin: auto;
+    padding: 0;
+}
+.gal-nav > ul > li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+.gal-nav > ul > li:hover{
+    background-color: rgb(184, 184, 184);
+}
+.gal-nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: white;
+    text-align: right;
+    box-sizing: border-box;
+    color: rgb(184, 184, 184);
+    font-size: 30px;
+    display: none;
+}
+@media (max-width:768px){
+    .toggle{
+        display: block;
+    }
+    .gal-nav > ul{
+        width: 100%;
+        display: none;
+    }
+    .gal-nav > ul > li{
+        display: block;
+        text-align: center;
+    }
+    .active{
+        display: block;
+    }
+}
