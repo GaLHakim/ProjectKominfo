@@ -151,59 +151,44 @@ input[type="text"],input[type="password"]{
 }
 
 /*---FORM---*/
-.gal-nav{
-    /*margin: 0px;
-    padding: 0 67px 0 67px;
-    font-family: 'Arial', serif;
-    font-size: 12px;
-    list-style-type: none;
+#dropFileForm{
+    margin: 16px;
+    text-align: center;
+    border-radius: 8px;
     overflow: hidden;
-    position: sticky;
-    background-color: white;
-    box-shadow: 2px 2px 5px grey;*/
-    width: 100%;
-    background: white;
+    transition: .5s;
 }
-.gal-nav > ul{
-    width: 75%;
-    margin: auto;
-    padding: 0;
+#dropFileForm #fileLabel{
+    background-color: rgba(0,255,0,0.5);
+    display: block;
+    padding: 16px;
+    position: relative;
+    cursor: pointer;
 }
-.gal-nav > ul > li{
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
-}
-.gal-nav > ul > li:hover{
-    background-color: rgb(184, 184, 184);
-}
-.gal-nav > ul > li > a{
-    text-decoration: none;
-    color: black;
-}
-.toggle{
-    width: 100%;
-    padding: 10px 20px;
-    background: white;
-    text-align: right;
-    box-sizing: border-box;
-    color: rgb(184, 184, 184);
-    font-size: 30px;
+#dropFileForm #fileInput{
     display: none;
 }
-@media (max-width:768px){
-    .toggle{
-        display: block;
-    }
-    .gal-nav > ul{
-        width: 100%;
-        display: none;
-    }
-    .gal-nav > ul > li{
-        display: block;
-        text-align: center;
-    }
-    .active{
-        display: block;
-    }
+#dropFileForm #fileLabel::after,
+#dropFileForm #fileLabel::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: -2;
+    border-radius: 8px 8px 0 0;
+}
+#dropFileForm .uploadButton{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(85, 221, 85);
+    color: white;
+    cursor: pointer;
+}
+#dropFileForm.fileHover{
+    box-shadow: 0 0 16px red;
 }
