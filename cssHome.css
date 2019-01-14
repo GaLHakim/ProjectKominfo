@@ -4,11 +4,6 @@ body{
     font-family: Titillium Web;
     background: aqua;
 }
-h2{
-    margin: 0;
-    color: rgb(233, 74, 74);
-    font-size: 50px;
-}
 .gal-container{
     max-width: 960px;
     width: 100%;
@@ -191,4 +186,16 @@ input[type="text"],input[type="password"]{
 }
 #dropFileForm.fileHover{
     box-shadow: 0 0 16px red;
+}
+#gal-action{
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+/*---FORM BAB 2---*/
+.divBAB2.judul{
+    display: block;
+    text-align: left;
+}
+.display{
+    display: none;
 }
