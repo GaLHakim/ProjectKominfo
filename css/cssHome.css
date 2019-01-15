@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Titillium Web;
+    background: aqua;
+}
+.gal-container{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+
+/*---FONT SIZE---*/
+.gal-font.size.medium{
+    font-size: medium;
+}
+.gal-font.size.larger{
+    font-size: larger;
+}
+.gal-font.size30{
+    font-size: 30px;
+}
+.gal-font.size50{
+    font-size: 50px ;
+}
+
+/*---FONT COLOR---*/
+.gal-font.color.blue{
+    color: blue;
+}
+
+/*---HEADER---*/
+header{
+    background: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.gal-logo{
+    float: left;
+    margin-top: 10px;
+}
+nav{
+    float: right;
+    line-height: 70px;
+}
+nav li{
+    display: inline-block;
+    padding: 5px 20px;
+    margin-left: 10px;
+    background:white;
+    line-height: normal;
+}
+nav > li > a{
+    text-decoration: none;
+    color: darkgrey;
+}
+
+/*---HOME---*/
+.gal-container.home{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 200px;
+}
+.gal-container.home > h1{
+    margin: 0;
+    padding: 10px;
+}
+
+/*---LOGIN---*/
+.gal-container.login{
+    width: 500px;
+    height: auto;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+.gal-container.login > img{
+    width: 120px;
+    height: 140px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+.gal-container.login > form > a{
+    text-decoration: none;
+    color: darkgrey;
+}
+input[type="text"],input[type="password"]{
+    width: 300px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+    border-bottom: 2px solid darkgray;
+    margin-top: 20px;
+}
+.gal-btn.login{
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: darkgray;
+}
+
+/*---REGISTRASI---*/
+.gal-container.registrasi{
+    width: 500px;
+    height: auto;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 90px;
+}
+.gal-container.registrasi > img{
+    width: 120px;
+    height: 140px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+.gal-container.registrasi > form > a{
+    text-decoration: none;
+    color: darkgrey;
+}
+input[type="text"],input[type="password"]{
+    width: 70%;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-bottom: 2px solid darkgray;
+    margin-top: 20px;
+}
+.gal-btn.registrasi{
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: darkgray;
+}
+
+/*---FORM---*/
+#dropFileForm{
+    margin: 16px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: .5s;
+}
+#dropFileForm #fileLabel{
+    background-color: rgba(0,255,0,0.5);
+    display: block;
+    padding: 16px;
+    position: relative;
+    cursor: pointer;
+}
+#dropFileForm #fileInput{
+    display: none;
+}
+#dropFileForm #fileLabel::after,
+#dropFileForm #fileLabel::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: -2;
+    border-radius: 8px 8px 0 0;
+}
+#dropFileForm .uploadButton{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(85, 221, 85);
+    color: white;
+    cursor: pointer;
+}
+#dropFileForm.fileHover{
+    box-shadow: 0 0 16px red;
+}
+#gal-action{
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+/*---FORM BAB 2---*/
+.divBAB2.judul{
+    display: block;
+    text-align: left;
+}
+.display{
+    display: none;
+}
+/*--erorrs--*/
+.error{
+    width: 70%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background:#f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
