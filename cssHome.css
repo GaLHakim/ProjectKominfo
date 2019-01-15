@@ -110,7 +110,7 @@ input[type="text"],input[type="password"]{
 /*---REGISTRASI---*/
 .gal-container.registrasi{
     width: 500px;
-    height: 500px;
+    height: auto;
     text-align: center;
     background-color: rgba(255,255,255,0.8);
     border-radius: 20px;
@@ -128,10 +128,11 @@ input[type="text"],input[type="password"]{
     color: darkgrey;
 }
 input[type="text"],input[type="password"]{
-    width: 300px;
+    width: 70%;
     height: 45px;
     font-size: 16px;
     border: none;
+    padding-left: 10px;
     background-color: rgba(255,255,255,0.5);
     border-bottom: 2px solid darkgray;
     margin-top: 20px;
@@ -198,4 +199,15 @@ input[type="text"],input[type="password"]{
 }
 .display{
     display: none;
+}
+/*--erorrs--*/
+.error{
+    width: 70%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background:#f2dede;
+    border-radius: 5px;
+    text-align: left;
 }
