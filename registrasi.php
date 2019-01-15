@@ -1,11 +1,12 @@
-<?php include '/users/register.php'; ?>
+<?php include 'users\register.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>PERATURAN GUBERNUR JAWA TIMUR</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="cssHome.css">
+<link rel="stylesheet" type="text/css" href="css\cssHome.css">
 </head>
 <body>
     <div class="gal-container registrasi">
@@ -31,7 +32,7 @@
             <input type="submit" name="register"
             value="REGISTRASI" class="gal-btn registrasi"><br><br>
             <a>Back to</a>
-            <a href="login.html" class="gal-font color blue">Login</a>
+            <a href="login.php" class="gal-font color blue">Login</a>
         </form>
     </div>
     
