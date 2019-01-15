@@ -1,10 +1,16 @@
+<?php 
+    include('session.php');
+    if(isset($_SESSION['username'])){
+        header('location:dashboard.php');
+    }
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>PERATURAN GUBERNUR JAWA TIMUR</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="cssHome.css">
+<link rel="stylesheet" type="text/css" href="css\cssHome.css">
 </head>
 
 <body>
@@ -15,7 +21,7 @@
             </div>
             <nav>
                 <li><a href="registrasi.php">Registrasi</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="login.php">Login</a></li>
                 <li><a href="tentang.html">Tentang</a></li>
                 <li><a href="kontak.html">Kontak</a></li>
             </nav>

@@ -27,11 +27,10 @@
 			$password = $password_1;
 			$sql = "INSERT INTO tbl_user (name,username,password) 
 					VALUES ('$name','$username','$password')";
-			if(mysqli_query($db,$sql)){
-				echo "New record successs";
-			}else{
-				echo "Error: ".$sql."<br>".mysqli_error($db);
-			}
+			mysqli_query($db,$sql);
+			
+			$_SESSION['username'] = $username;
+			header('location:dashboard.php');
 		}
 	}
 ?>
