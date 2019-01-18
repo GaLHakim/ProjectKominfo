@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background:wheat;
+    background:white;
 }
 .container{
     max-width: 960px;
@@ -12,7 +12,7 @@ body{
     max-width: 1270px;
     background-color: white;
     margin-top: 127px;
-    height: 1000px;
+    height: auto;
 }
 /*---HEADER---*/
 header{
@@ -83,18 +83,50 @@ ul{
 }
 
 /*---CONTENT QUISONER---*/
-.box-btn{
+.quis-judul{
     margin-top: 140px;
+    background-color: rgb(80, 80, 179);
+    border-radius: 8px 8px 0 0;
+    padding: 1px 20px;  
+    color: white;
+}
+.quis-judul p{
+    text-align: center;
+}
+.box-btn{
     height: 100px;
-    width: 100%;
-    background-color: rgb(165, 165, 165);
+    background-color:white;
+    border: 3px solid rgb(80, 80, 179);
     border-radius: 0 0 8px 8px;
     text-align: center;
+}
+.quis-btn{
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: rgb(75, 75, 75);
+    padding: 10px 15px;
+    margin: 20px 20px;
+    cursor: pointer;
+}
+.isi{
+    background-color: rgb(93, 228, 93);
+}
+.jawab{
+    background-color: rgb(255, 108, 108);
 }
 
 /*---CONTENT DATAUSER---*/
 .data-judul{
     margin-top: 140px;
+    background-color: rgb(80, 80, 179);
+    border-radius: 8px 8px 0 0;
+    padding: 1px 20px;
+    color: white;
+}
+.data-judul1{
+    margin-top: 10px;
     background-color: rgb(80, 80, 179);
     border-radius: 8px 8px 0 0;
     padding: 1px 20px;
@@ -106,11 +138,15 @@ ul{
     border-radius: 0 0 8px 8px;
 }
 #table{
+    border-collapse: collapse;
     width: 100%;
 }
 #table td, #table th{
-    border: 1px solid rgb(140, 140, 255);
-    border-left: 0;
-    border-right: 0;
-    padding: 8px;
+    border-top: 1px solid rgb(140, 140, 255);
+}
+#no{
+    width: 40px;
+}
+#aksi{
+    width: 160px;
 }
