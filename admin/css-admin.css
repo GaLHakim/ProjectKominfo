@@ -9,6 +9,7 @@ body{
     margin: auto;
 }
 .content{
+    max-width: 1270px;
     background-color: white;
     margin-top: 127px;
     height: 1000px;
@@ -27,7 +28,7 @@ header{
 }
 nav{
     float: left;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 nav li{
     margin-left: 10px;
@@ -53,7 +54,63 @@ ul{
     padding: 10px 16px;
     text-decoration: none;
 }
-.ul-li a:hover{
+.ul-li a:hover:not(.active){
     background-color: rgb(179, 179, 179);
     color: black;
+}
+.active{
+    background-color: rgb(255, 148, 148);
+}
+
+/*---CONTENT DISHBOARD---*/
+.dish-judul{
+    margin-top: 140px;
+    background-color: rgb(80, 80, 179);
+    border-radius: 8px 8px 0 0;
+    padding: 1px 20px;
+    color: white;
+}
+.dish-down{
+    padding: 10px 20px;
+    border: 3px solid rgb(80, 80, 179);
+    border-radius: 0 0 8px 8px;
+}
+.dish-down p{
+    padding: 20px 20px;
+    border: 3px solid rgb(140, 140, 255);
+    border-radius: 8px;
+    background-color: rgb(151, 151, 255);
+}
+
+/*---CONTENT QUISONER---*/
+.box-btn{
+    margin-top: 140px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(165, 165, 165);
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+/*---CONTENT DATAUSER---*/
+.data-judul{
+    margin-top: 140px;
+    background-color: rgb(80, 80, 179);
+    border-radius: 8px 8px 0 0;
+    padding: 1px 20px;
+    color: white;
+}
+.data-down{
+    padding: 10px 10px;
+    border: 3px solid rgb(80, 80, 179);
+    border-radius: 0 0 8px 8px;
+}
+#table{
+    width: 100%;
+}
+#table td, #table th{
+    border: 1px solid rgb(140, 140, 255);
+    border-left: 0;
+    border-right: 0;
+    padding: 8px;
 }
