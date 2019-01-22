@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css-admin.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,9 +19,14 @@
                 <li>Telp : (031) 8294608 / Fax : (031) 8294517 / email : kominfo@jatimprov.go.id</li>
             </nav>
             <ul>
-                <li class="ul-li"><a class="active" href="admin-dashboard.html">Dashboard</a></li>
-                <li class="ul-li"><a href="admin-quisoner.html">Quisoner</a></li>
-                <li class="ul-li"><a href="admin-datauser.html">Data User</a></li>
+                    <li class="ul-li"><a class="active" href="admin-dashboard.html"><i class="fa fa-home" style="padding-right:10px;"></i>Dashboard</a></li>
+                    <li class="ul-li dropdown"><a class="dropbtn" href="admin-quisoner.html"><i class="fa fa-list-ul" style="padding-right:10px"></i>Quisoner</a>
+                        <ul>
+                            <li><a href="input-pertanyaan.html">Input</a></li>
+                            <li><a href="#laporan">Laporan</a></li>
+                        </ul>
+                    </li>
+                    <li class="ul-li"><a href="admin-datauser.html"><i class="fa fa-database" style="padding-right:10px"></i>Data User</a></li>
             </ul>
         </div>
     </header>
