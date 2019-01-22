@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css-admin.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -31,37 +32,31 @@
         </div>
     </header>
     <div class="content container">
-        <p style="margin-top:140px;"><a class="input-judul" href="admin-quisoner.html">Quisoner</a>/ Input Pertanyaan</p>
-        <div class="input-aksi">
-            <p>HALAMAN AKSI</p>
+        <div class="tambah-aksi">
+            <p>AKSI</p>
         </div>
-        <div class="input-btnaksi">
-            <form action="tambahpertanyaan.html">
-                <input class="input-btn tambah" type="submit" value="Tambahkan Quisoner"></input>
+        <div class="tambah-btnaksi row">
+            <div class="col-25">
+                <p>Anda berada di halaman tambah pertanyaan</p>
+            </div>
+            <form action="input-pertanyaan.html" class="col-75">
+                <input id="tambahclose-btn" type="submit" value="Close">
+                <label for="tambahclose-btn" id="label-closebtn"><i class="fas fa-times"></i> Close</label>
             </form>
         </div>
-        <div class="input-soal">
-                <p>SOAL ESSAY</p>
+        <div class="tambahquisoner-judul">
+            <p>TAMBAH PERTANYAAN QUISONER</p>
+        </div>
+        <div class="tambah-isipertanyaan">
+            <div id="upPertanyaan">
+                <label for="isipertanyaan">Masukan Pertanyaan</label>
             </div>
-            <div class="input-listsoal">
-                <table id="table-soal">
-                    <tr>
-                        <td id="no-soal">1.</td>
-                        <td>NAMA INSTANSI</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Aksi :</td>
-                    </tr>
-                    <tr>
-                        <td id="no-soal">2.</td>
-                        <td>adwasdwasdw</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Aksi :</td>
-                    </tr>
-                </table>
+            <div>
+                <textarea id="isipertanyaan" name="isipertanyaan"></textarea>
             </div>
+            <div>
+                <input id="tambahsubmit-btn" type="submit" value="submit">
+            </div>
+        </div>
     </div>
 </body>
