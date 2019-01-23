@@ -93,7 +93,7 @@ nav > li > a{
 }
 input[type="text"],input[type="password"]{
     width: 300px;
-    height: 45px;
+    height: 100px;
     font-size: 16px;
     border: none;
     background-color: rgba(255,255,255,0.5);

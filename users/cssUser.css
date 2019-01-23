@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:white;
+}
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+.content{
+    max-width: 1286px;
+    background-color: white;
+    margin-top: 60px;
+    height: auto;
+}
+
+/*---NAVIGATION---*/
+ul{
+	margin: 0;
+	top: 0;
+    width: 100%;
+    list-style-type: none;
+    position: fixed;
+    background-color: black;
+}
+.ul-li{
+    float: left;
+    position: relative;
+}
+.ul-li a, .dropbtn{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+.ul-li a:hover, .dropdown:hover .dropbtn{
+    background-color: rgb(255, 148, 148);
+    color: black;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: rgb(255, 148, 148);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.active{
+    background-color: rgb(255, 148, 148);
+}
+
+/*---CONTENT DATA USER---*/
+table{
+    border-collapse: collapse;
+	width: 100%;
+}
+input[type="text"], input[type="password"]{
+	width: 80%;
+    height: 25px;
+	border: 1px solid darkgray;
+	border-radius: 4px;
+}
+#label-submit{
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	border: 1px solid black;
+	background-image: linear-gradient(to top, rgb(50, 50, 130), rgb(50, 50, 200));
+    cursor: pointer;
+}
+#submit-profil{
+	display: none;
+}
+#label-reset{
+	margin-left: -95px;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	border: 1px solid black;
+	background-image: linear-gradient(to top, rgb(190, 50, 50),rgb(240, 50, 50));
+	cursor: pointer;
+}
+#reset-profil{
+	display: none;
+}
+#label-editsubmit{
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	border: 1px solid black;
+	background-image: linear-gradient(to top, rgb(50, 50, 130), rgb(50, 50, 200));
+    cursor: pointer;
+}
+#submit-editprofil{
+	display: none;
+}
+#label-editreset{
+	margin-left: -65px;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	border: 1px solid black;
+	background-image: linear-gradient(to top, rgb(190, 50, 50),rgb(240, 50, 50));
+	cursor: pointer;
+}
+#reset-editprofil{
+	display: none;
+}
+
+/*---CONTENT DATA USER (PROFIL)---*/
+#tableprofil td{
+	height: 35px;
+    border-top: 1px solid rgb(200, 200, 200);
+}
+#profil{
+	width: 32%;
+}
+#profil-content{
+	width: 58%;
+	background-color: white;
+}
+.profil-judul{
+	background-image: linear-gradient(to top, rgb(200, 200, 200), white);
+	border: 2px solid rgb(200, 200, 200);
+	border-radius: 8px 8px 0 0;
+	padding: 5px 10px;
+    color: black;
+}
+.profil-down{
+    padding: 10px 20px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 0 0 8px 8px;
+}
+/*---CONTENT DATA USER (EDIT PROFIL)---*/
+#tableedit td{
+	height: 35px;
+}
+#editprofil-content{
+	vertical-align: top;
+	width: 40%;
+	background-color: white;
+}
+.editprofil-judul{
+	background-image: linear-gradient(to top, rgb(200, 200, 200), white);
+	border: 2px solid rgb(200, 200, 200);
+	border-radius: 8px 8px 0 0;
+	padding: 5px 10px;
+    color: black;
+}
+.editprofil-down{
+    padding: 10px 20px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 0 0 8px 8px;
+}
