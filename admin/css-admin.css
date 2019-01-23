@@ -9,10 +9,24 @@ body{
     margin: auto;
 }
 .content{
-    max-width: 1270px;
+    max-width: 1286px;
     background-color: white;
     margin-top: 127px;
-    height: 1000px;
+    height: auto;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-25{
+    float: left;
+    width: 25%;
+}
+.col-75{
+    margin-top: 28px;
+    float: left;
+    width: 75%;
 }
 
 /*---HEADER---*/
@@ -60,22 +74,6 @@ ul{
 .ul-li a:hover, .dropdown:hover .dropbtn{
     background-color: rgb(255, 148, 148);
     color: black;
-}
-li.dropdown{
-    display: inline-block;
-}
-ul li ul{
-    top: -51px;
-    position: absolute;
-    left: 0;
-    background-color: black;
-    display: none;
-}
-ul li:hover ul{
-    display: block;
-}
-ul li ul li{
-    display: block;
 }
 .dropdown-content{
     display: none;
@@ -156,8 +154,12 @@ ul li ul li{
     background-color: rgb(255, 108, 108);
 }
 /*---CONTENT QUISONER INPUT---*/
+.input-judul{
+    margin-left: 19px;
+    color: rgb(130, 130, 255);
+    text-decoration: none;
+}
 .input-aksi{
-    margin-top: 140px;
     background-color: rgb(218, 218, 218);
     border-radius: 8px 8px 0 0;
     padding: 1px 20px;  
@@ -176,8 +178,6 @@ ul li ul li{
     padding: 10px 13px;
     margin: 20px 20px;
     cursor: pointer;
-}
-.tambah{
     color: white;
     background-color: rgb(80, 80, 179);
 }
@@ -201,6 +201,76 @@ ul li ul li{
 #no-soal{
     text-align: center;
     width: 20px;
+}
+/*---INPUT TAMBAH PERTANYAAN---*/
+.tambah-aksi{
+    margin-top: 140px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 8px 8px 0 0;
+    padding: 1px 20px;  
+    color: black;
+}
+.tambah-btnaksi{
+    height: auto;
+    background-color:white;
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 0 0 8px 8px;
+}
+.tambah-btnaksi p{
+    margin:20px;
+    padding: 8px 8px;
+    color: white;
+    background-color: rgb(80, 80, 179);
+    width: 290px;
+    text-align: center;
+    border-radius: 5px;
+}
+.tambahquisoner-judul{
+    margin-top: 20px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 8px 8px 0 0;
+    padding: 1px 20px;  
+    color: black;
+}
+.tambah-isipertanyaan{
+    height: 500px;
+    background-color:white;
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 0 0 8px 8px;
+}
+#label-closebtn{
+    margin: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+#tambahclose-btn{
+    display: none;
+}
+#tambahsubmit-btn{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(80, 80, 179);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+#upPertanyaan{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#isipertanyaan{
+    max-width: 95%;
+    max-height: 200px;
+    margin-left: 20px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 /*---CONTENT DATAUSER---*/
