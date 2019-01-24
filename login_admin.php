@@ -13,15 +13,15 @@
 		}
 		if(count($errors) == 0){
 			$query = "SELECT * FROM admin WHERE username = '$username' AND password = md5('$password')";
-			$result = mysqli_query($db_con,$query);
-			if(mysqli_num_rows($result) == 1){
-				header('location:admin/index.php?page=dashboard&&activedash=1');
+			$result = mysql_query($query);
+			if(mysql_num_rows($result) == 1){
+				$_SESSION['username'] = $username;
+				
+				header('location:admin/index.php?page=dashboard&&activedash=1');			
 			}else{
 				array_push($errors,"wrong username/password combination".mysqli_error($db_con));
-				
 			}
 		}
-		unset($_POST['login']);
 	}
  ?>
  <!DOCTYPE html>

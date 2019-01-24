@@ -3,12 +3,12 @@ body{
     padding: 0;
     background:white;
 }
-.container{
+.newcontainer{
     max-width: 960px;
     width: 100%;
     margin: auto;
 }
-.content{
+.newcontent{
     max-width: 1286px;
     background-color: white;
     margin-top: 127px;
