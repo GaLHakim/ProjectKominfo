@@ -15,7 +15,7 @@ body{
     height: auto;
 }
 
-/*---NAVIGATION---*/
+/*-------------------------NAVIGATION---------------------------*/
 ul{
 	margin: 0;
 	top: 0;
@@ -62,8 +62,9 @@ ul{
 .active{
     background-color: rgb(255, 148, 148);
 }
+/*--------------------------------------------------------------*/
 
-/*---CONTENT DATA USER---*/
+/*------------------------CONTENT DATA USER---------------------*/
 table{
     border-collapse: collapse;
 	width: 100%;
@@ -73,6 +74,30 @@ input[type="text"], input[type="password"]{
     height: 25px;
 	border: 1px solid darkgray;
 	border-radius: 4px;
+}
+		/*---CONTENT DATA USER (PROFIL)---*/
+#tableprofil td{
+	height: 35px;
+    border-top: 1px solid rgb(200, 200, 200);
+}
+#profil{
+	width: 32%;
+}
+#profil-content{
+	width: 58%;
+	background-color: white;
+}
+.profil-judul{
+	background-image: linear-gradient(to top, rgb(200, 200, 200), white);
+	border: 2px solid rgb(200, 200, 200);
+	border-radius: 8px 8px 0 0;
+	padding: 5px 10px;
+    color: black;
+}
+.profil-down{
+    padding: 10px 20px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 0 0 8px 8px;
 }
 #label-submit{
 	padding: 10px;
@@ -97,6 +122,28 @@ input[type="text"], input[type="password"]{
 #reset-profil{
 	display: none;
 }
+		/*------------------------*/
+		/*---CONTENT DATA USER (EDIT PROFIL)---*/
+#tableedit td{
+	height: 35px;
+}
+#editprofil-content{
+	vertical-align: top;
+	width: 40%;
+	background-color: white;
+}
+.editprofil-judul{
+	background-image: linear-gradient(to top, rgb(200, 200, 200), white);
+	border: 2px solid rgb(200, 200, 200);
+	border-radius: 8px 8px 0 0;
+	padding: 5px 10px;
+    color: black;
+}
+.editprofil-down{
+    padding: 10px 20px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 0 0 8px 8px;
+}
 #label-editsubmit{
 	padding: 10px;
 	border-radius: 5px;
@@ -120,49 +167,113 @@ input[type="text"], input[type="password"]{
 #reset-editprofil{
 	display: none;
 }
+		/*------------------------*/
+/*--------------------------------------------------------------*/
 
-/*---CONTENT DATA USER (PROFIL)---*/
-#tableprofil td{
-	height: 35px;
-    border-top: 1px solid rgb(200, 200, 200);
-}
-#profil{
-	width: 32%;
-}
-#profil-content{
-	width: 58%;
-	background-color: white;
-}
-.profil-judul{
+/*-----------------CONTENT PENGAJUAN APLIKASI-------------------*/
+.peng-kuisoner{	
 	background-image: linear-gradient(to top, rgb(200, 200, 200), white);
-	border: 2px solid rgb(200, 200, 200);
-	border-radius: 8px 8px 0 0;
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 5px 5px 0 0;
 	padding: 5px 10px;
     color: black;
 }
-.profil-down{
-    padding: 10px 20px;
-    border: 2px solid rgb(200, 200, 200);
-    border-radius: 0 0 8px 8px;
+.kuisoner-content{
+	height: auto;
+	padding: 10px 10px;
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 0 0 5px 5px;
 }
-/*---CONTENT DATA USER (EDIT PROFIL)---*/
-#tableedit td{
-	height: 35px;
+#table-kuis th, #table-kuis td{
+	height: auto;
+	border: 0px solid grey;
 }
-#editprofil-content{
-	vertical-align: top;
-	width: 40%;
-	background-color: white;
+#no-kuis{
+	text-align: center;
+	width: 3%;
 }
-.editprofil-judul{
+#content-jawab{
+	max-width: 95%;
+    max-height: 200px;
+    width: 100%;
+    border-radius: 5px;
+}
+#next-kuis{
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	border: 1px solid black;
+	background-image: linear-gradient(to top, rgb(190, 50, 50),rgb(240, 50, 50));
+	cursor: pointer;
+}
+/*--------------------------------------------------------------*/
+
+/*-----------------CONTENT PENGAJUAN PROPOSAL-------------------*/
+.peng-proposal{	
 	background-image: linear-gradient(to top, rgb(200, 200, 200), white);
-	border: 2px solid rgb(200, 200, 200);
-	border-radius: 8px 8px 0 0;
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 5px 5px 0 0;
 	padding: 5px 10px;
     color: black;
 }
-.editprofil-down{
-    padding: 10px 20px;
-    border: 2px solid rgb(200, 200, 200);
-    border-radius: 0 0 8px 8px;
+.proposal-content{
+	height: auto;
+	padding: 10px 10px;
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 0 0 5px 5px;
 }
+#formDropFile{
+	width: 50%;
+	margin: 0;
+	background-color: wheat;
+	text-align: center;
+	border-radius: 5px;
+	transition: .5s;
+}
+#fileInput{
+	display: none;
+}
+#label_fileInput{
+	border-radius: 5px 5px 0 0;
+	background-color: rgb(207, 207, 207);
+	display: block;
+	padding: 16px;
+	position: relative;
+	cursor: pointer;
+}
+#label_fileInput:after,
+#label_fileInput:before{
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: red;
+	z-index: -1;
+	border-radius: 5px 5px 0 0;
+}
+#formDropFile .uploadBtn{
+	border: 0;
+	outline: 0;
+	width: 100%;
+	padding: 8px;
+	background-color: red;
+	border-radius: 0 0 5px 5px;
+	color: white;
+	cursor: pointer;
+}
+#formDropFile.fileHover{
+	box-shadow: 0 0 16px darkgrey;
+}
+#submit-proposal{
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	border: 1px solid black;
+	background-image: linear-gradient(to top, rgb(50, 50, 130), rgb(50, 50, 200));
+	cursor: pointer;
+}
+/*--------------------------------------------------------------*/
