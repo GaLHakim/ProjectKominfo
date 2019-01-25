@@ -14,6 +14,19 @@ body{
     margin-top: 60px;
     height: auto;
 }
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+.col-3{
+	float: left;
+	width: 25%;
+}
+.col-6{
+	float: left;
+	width: 50%;
+}
 
 /*-------------------------NAVIGATION---------------------------*/
 ul{
@@ -219,13 +232,14 @@ input[type="text"], input[type="password"]{
 }
 .proposal-content{
 	height: auto;
+	text-align: center;
 	padding: 10px 10px;
 	border: 1px solid rgb(200, 200, 200);
 	border-radius: 0 0 5px 5px;
 }
 #formDropFile{
-	width: 50%;
-	margin: 0;
+	margin-left: 25%;
+	margin-right: 25%;
 	background-color: wheat;
 	text-align: center;
 	border-radius: 5px;
@@ -236,7 +250,7 @@ input[type="text"], input[type="password"]{
 }
 #label_fileInput{
 	border-radius: 5px 5px 0 0;
-	background-color: rgb(207, 207, 207);
+	background-color: rgb(147, 147, 255);
 	display: block;
 	padding: 16px;
 	position: relative;
@@ -250,7 +264,7 @@ input[type="text"], input[type="password"]{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: red;
+	background-color: blue;
 	z-index: -1;
 	border-radius: 5px 5px 0 0;
 }
@@ -259,13 +273,13 @@ input[type="text"], input[type="password"]{
 	outline: 0;
 	width: 100%;
 	padding: 8px;
-	background-color: red;
+	background-color: blue;
 	border-radius: 0 0 5px 5px;
 	color: white;
 	cursor: pointer;
 }
 #formDropFile.fileHover{
-	box-shadow: 0 0 16px darkgrey;
+	box-shadow: 0 0 16px blue;
 }
 #submit-proposal{
 	margin-top: 20px;
