@@ -1,132 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>PERATURAN GUBERNUR JAWA TIMUR</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="cssUser.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css\bootstrap4.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<script src="js\jquery4.js"></script>
+  	<script src="js\bootstrap4.bundle.js"></script>
 </head>
+
 <body>
-    <header>
-		<div>
-		<ul>
-            <li class="ul-li"><a class="active" href="admin-dashboard.html"><i class="fas fa-home" style="padding-right:10px;"></i>Data User</a></li>
-            <li class="ul-li dropdown"><a class="dropbtn"><i class="fas fa-list-ul" style="padding-right:10px"></i>Laporan Tahunan</a>
-			<div class="dropdown-content">
-                <a href="input-pertanyaan.html">Input</a>
-                <a href="#laporan">Laporan</a>
-            </div>
-        	</li>
-		</ul>
+	<header class="nav-header navbar navbar-expand-md container-fluid fixed-top">
+		<div class="header container">
+			<a class="" href="#" >
+				<img class="img-fluid" src="jatim.png" alt="logo" style="width:60px;">
+			</a>
+			<div class="nav-link">
+				<li>DINAS KOMUNIKASI DAN INFOMATIKA PROVINSI JAWA TIMUR</li>
+				<li>Jl. Ahmad Yani 242 - 244 Surabya</li>
+				<li>Telp : (031)8294608 / Fax : (031)8294517 / Email : kominfo@jatimprov.go.id</li>
+			</div>
 		</div>
-    </header>
-    <div class="content container">
-		<table>
-		<tr>
-			<td id="profil-content">
-				<div class="profil-judul">
-					<a>DISHBOARD</a>
+	</header>
+	<nav class="nav-fixed justify-content-end navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="userProfile.php">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="userPengajuan.php">Pengajuan Aplikasi</a>
+				</li>
+			</ul>
+		</div>  
+	</nav>
+	<section class="content container-fluid">
+		<div class="row">
+			<div class="col-sm-8 col-md-8 col-lg-8">
+				<div class="content-judul rounded-top text-white">
+					<a>Edit Profile</a>
 				</div>
-				<div class="profil-down">
-					<table id="tableprofil">
+				<div class="conten-edit rounded-bottom bg-light text-dark table">
+					<table>
 						<tr>
-							<td id="profil">NIP / HP</td>
-							<td id="profil1">:</td>
+							<td>NIP / HP</td>
+							<td>:</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td id="profil">NAMA</td>
-							<td id="profil1">:</td>
+							<td>NAMA</td>
+							<td>:</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td id="profil">NAMA INSTANSI</td>
-							<td id="profil1">:</td>
+							<td>NAMA INSTANSI</td>
+							<td>:</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td id="profil">BIDANG / BAGIAN</td>
-							<td id="profil1">:</td>
+							<td>BIDANG / BAGIAN</td>
+							<td>:</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td id="profil">SUB BIDANG / SUB BAGIAN</td>
-							<td id="profil1">:</td>
+							<td>SUB BIDANG / SUB BAGIAN</td>
+							<td>:</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td id="profil">JABATAN</td>
-							<td id="profil1">:</td>
+							<td>JABATAN</td>
+							<td>:</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td id="profil">NOMOR HP</td>
-							<td id="profil1">:</td>
+							<td>NOMOR HP</td>
+							<td>:</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td id="profil">EMAIL</td>
-							<td id="profil1">:</td>
+							<td>EMAIL</td>
+							<td>:</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td id="profil">WEB / BLOG</td>
-							<td id="profil1">:</td>
+							<td>WEB / BLOG</td>
+							<td>:</td>
 							<td></td>
-						</tr>
-						<tr><td style="border:none;"></td></tr>
-						<tr>
-							<td style="border:none;">
-								<form action="">
-									<input id="submit-profil" type="submit" value="submit">
-									<label for="submit-profil" id="label-submit">Ubah Password</label>
-								</form>
-							</td>
-							<td style="border:none;">
-								<form action="">
-									<input id="reset-profil" type="reset" value="reset">
-									<label for="reser-profil" id="label-reset"> Reset</label>
-								</form>
-							</td>
 						</tr>
 					</table>
 				</div>
-			</td>
-			<td></td>
-			<td id="editprofil-content">
-				<div class="editprofil-judul">
-					<a>DISHBOARD</a>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4">
+				<div class="content-judul rounded-top text-white">
+					<a>Edit User Password</a>
 				</div>
-				<div class="editprofil-down">
-					<table id="tableedit">
+				<div class="conten-edit rounded-bottom bg-light text-dark table">
+					<table>
 						<tr>
-							<td id="editprofil">Username</td>
-							<td><input type="text"></td>
+							<td><label for="usr">Username :</label></td>
+							<td><input type="text" class="form-control" id="usr"></td>
 						</tr>
 						<tr>
-							<td>Password</td>
-							<td><input type="password"></td>
-						</tr>
-						<tr><td></td></tr>
-						<tr>
-							<td>
-								<form action="">
-									<input id="submit-editprofil" type="submit" value="submit">
-									<label for="submit-editprofil" id="label-submit">Ubah Password</label>
-								</form>
-							</td>
-							<td>
-								<form action="">
-									<input id="reset-editprofil" type="reset" value="reset">
-									<label for="reser-editprofil" id="label-editreset"> Reset</label>
-								</form>
-							</td>
+							<td><label for="pwd">Password :</label></td>
+							<td><input type="password" class="form-control" id="pwd"></td>
 						</tr>
 					</table>
 				</div>
-			</td>
-		</tr>
-		</table>
-    </div>
+			</div>
+		</div>
+	</section>
 </body>
+</html>
