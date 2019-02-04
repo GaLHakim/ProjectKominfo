@@ -3,18 +3,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css\bootstrap4.css">
+	<link rel="stylesheet" href="C:\xampp\htdocs\projectkominfo\style.css">
+	<link rel="stylesheet" href="C:\xampp\htdocs\projectkominfo\css\bootstrap4.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	<script src="js\jquery4.js"></script>
-  	<script src="js\bootstrap4.bundle.js"></script>
+	<script src="C:\xampp\htdocs\projectkominfo\js\jquery4.js"></script>
+  	<script src="C:\xampp\htdocs\projectkominfo\js\bootstrap4.bundle.js"></script>
 </head>
 
 <body>
 	<header class="nav-header navbar navbar-expand-md container-fluid fixed-top">
 		<div class="header container">
 			<a class="" href="#" >
-				<img class="img-fluid" src="jatim.png" alt="logo" style="width:60px;">
+				<img class="img-fluid" src="C:\xampp\htdocs\projectkominfo\jatim.png" alt="logo" style="width:60px;">
 			</a>
 			<div class="nav-link">
 				<li>DINAS KOMUNIKASI DAN INFOMATIKA PROVINSI JAWA TIMUR</li>
